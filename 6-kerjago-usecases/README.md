@@ -1,14 +1,5 @@
-# 5 Waiting auto cancel
+# 6 Kerjago Usecase
 
-Imagine you have an application that user's need to fill but because it's already too long to wait, the workflow was automatically canceled.
-One thing in my mind that we have a service that gets.
+After exploring 5 use case module, i can compile into single real-world Kerjago usecase. This is just some simple Kerjago usecase (not actual in production of Kerjago).
 
-Put it simply, it's workflow that waiting for payment for some time. it may failed if the time reached or continue if the payment successfull.
-
-What I learn:
-1. You can cancel inside workflow by throwing `CancelledFailure`
-1. Hmm you need to poll the timeout with sleep(?)
-
-NOPE!
-
-Rather than using timeout with sleep, we can use condition with timeout. So after the condition are met, we can continue. Check on `workflow.ts` for implementation.
+Check out from the `workflow.ts`!
