@@ -1,0 +1,23 @@
+{
+  "name": "hello-world-workflow",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "ts-node start-workflow.ts",
+    "cancel": "ts-node cancel-workflow.ts",
+    "worker:activity": "ts-node worker-activity.ts",
+    "worker:workflow": "ts-node worker-workflow.ts"
+  },
+  "dependencies": {
+    "@temporalio/activity": "^1.10.0",
+    "@temporalio/client": "^1.10.0",
+    "@temporalio/worker": "^1.10.0",
+    "@temporalio/workflow": "^1.10.0",
+    "ts-node": "^10.9.2"
+  }
+}
