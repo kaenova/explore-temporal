@@ -1,15 +1,8 @@
-# wait-workflow
+# 1 Hello World
 
-To install dependencies:
+Just a simple workflow to change a input string to another string using "blackbox" function.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.6. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+What I learn:
+1. Worker and Activity worker can be using different Task Queue. In my case i'm using Task Queue that're defined in the `common.ts`.
+2. To assign a Task Queue for workflow, you will defined it in the temporal io client workflow invokes. You can check on `start-workflow.ts`
+3. To assign a Task Queue for activity, you need to define it on the workflow it self. The logic is that the workflow will invoke some activities that'll be using this queue. You can check the `workflow.ts` in the `proxyActivities` function.
