@@ -23,7 +23,7 @@ export async function HelloWorldWorkflow(
       nonRetryableErrorTypes: ["ApplicationFailure"],
     },
     taskQueue: activityQueueTask,
-    scheduleToCloseTimeout: "60 seconds",
+    startToCloseTimeout: "60 seconds",
   });
 
   let res: string;

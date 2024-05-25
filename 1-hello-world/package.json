@@ -1,11 +1,16 @@
 {
-  "name": "wait-workflow",
+  "name": "hello-world-workflow",
   "module": "index.ts",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "ts-node start-workflow.ts",
+    "worker:activity": "ts-node worker-activity.ts",
+    "worker:workflow": "ts-node worker-workflow.ts"
   },
   "dependencies": {
     "@temporalio/activity": "^1.10.0",

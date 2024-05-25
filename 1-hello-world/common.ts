@@ -1,5 +1,5 @@
-export const workflowQueueTask = "wait-workflow-workflow"
+export const workflowQueueTask = "hello-world-workflow";
 
-export const activityQueueTask = "wait-workflow-activity"
+export const activityQueueTask = "hello-world-activity";
 
-export const namespace = "default"
+export const namespace = "default";
